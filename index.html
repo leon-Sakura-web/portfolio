@@ -3,29 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Portfolio | LP Designer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+<h1>ポートフォリオサイト ver2</h1>
   <!-- HERO -->
   <header class="hero">
     <div class="hero-inner">
-      <h1>Web制作コーダー / LP制作</h1>
-      <p>伝わるデザインと、丁寧な実装を。</p>
-      <button id="scrollBtn">制作実績を見る</button>
+      <p class="hero-tag">LP Design / Coding</p>
+
+      <h1>
+        「伝わる導線設計」で<br>
+        <span>CVにつながるLP制作</span>
+      </h1>
+
+      <p class="hero-sub">
+        美容・カフェ・小規模店舗向けLPを中心に、<br>
+        デザイン再現＋成果設計を意識したコーディングを行っています。
+      </p>
+
+      <div class="hero-actions">
+        <button id="scrollBtn">制作実績を見る</button>
+        <a href="#contact" class="ghost-btn">相談する</a>
+      </div>
     </div>
   </header>
 
   <!-- ABOUT -->
   <section class="about">
     <h2>About</h2>
-    <p>
-      HTML / CSS / JavaScriptを中心に<br>
-      LP制作・Webサイト制作を行っています。<br>
-      Figmaデザインの再現やレスポンシブ対応を意識しています。
-    </p>
+
+    <div class="about-box">
+      <p>
+        LP制作・Webサイト制作を行っています。<br><br>
+
+        単なるコーディングではなく、<strong>「ユーザーがどう動くか」</strong>を前提に設計しています。<br>
+        特にスマホ閲覧を前提としたUI設計と、CV（問い合わせ）導線の設計を重視しています。<br><br>
+
+        「見た目が良い」ではなく「成果につながるLP」を作ることを目的としています。
+      </p>
+    </div>
   </section>
 
   <!-- SKILL -->
@@ -35,10 +54,10 @@
     <div class="skill-wrap">
       <div class="skill">HTML / CSS</div>
       <div class="skill">JavaScript</div>
-      <div class="skill">LP制作</div>
+      <div class="skill">LP設計</div>
       <div class="skill">レスポンシブ対応</div>
       <div class="skill">Figma再現</div>
-      <div class="skill">React（学習中）</div>
+      <div class="skill highlight">CV改善設計</div>
     </div>
   </section>
 
@@ -49,24 +68,33 @@
     <div class="work-wrap">
 
       <div class="card">
-        <img src="img/beauty.jpg" class="work-img" alt="">
-        <h3>美容クリニックLP</h3>
-        <p class="work-sub">Figma→コーディング再現</p>
-        <p class="work-desc">余白設計・視線誘導を意識して制作</p>
+        <img src="img/cafe.jpg" class="work-img" alt="">
+        <h3>カフェLP（新規集客）</h3>
+        <p class="work-sub">課題：来店導線の弱さ</p>
+        <p class="work-desc">
+          初見ユーザーでも迷わない構造設計を意識し、<br>
+          スマホファーストで来店導線を最適化。
+        </p>
       </div>
 
       <div class="card">
-        <img src="img/cafe.jpg" class="work-img" alt="">
-        <h3>カフェ新規オープンLP</h3>
-        <p class="work-sub">レスポンシブ対応</p>
-        <p class="work-desc">スマホ最適化を重視して構築</p>
+        <img src="img/beauty.jpg" class="work-img" alt="">
+        <h3>美容クリニックLP</h3>
+        <p class="work-sub">課題：信頼感の不足</p>
+        <p class="work-desc">
+          余白・フォント・視線誘導を調整し、<br>
+          安心感を与える構造設計を重視。
+        </p>
       </div>
 
       <div class="card">
         <img src="img/saas.jpg" class="work-img" alt="">
         <h3>SaaSサービスLP</h3>
-        <p class="work-sub">CV導線設計</p>
-        <p class="work-desc">問い合わせ導線を最適化</p>
+        <p class="work-sub">課題：CV率の低さ</p>
+        <p class="work-desc">
+          情報整理とCTA設計を改善し、<br>
+          問い合わせまでの導線を最適化。
+        </p>
       </div>
 
     </div>
@@ -75,24 +103,47 @@
   <!-- STRENGTH -->
   <section class="strength">
     <h2>Strength</h2>
+
     <div class="box">
-      <p>✔ 丁寧なコミュニケーション</p>
-      <p>✔ 修正柔軟対応</p>
-      <p>✔ 納期厳守</p>
+      <p>・ユーザー導線を意識したLP設計</p>
+      <p>・Figmaデザインの高精度再現</p>
+      <p>・スマホファーストUI設計</p>
+      <p>・CV改善を意識した構築</p>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact">
+  <section class="contact" id="contact">
     <h2>Contact</h2>
-    <p>ご依頼・ご相談などお気軽にご連絡ください</p>
-    <button>お問い合わせ</button>
+
+    <div class="contact-box">
+
+      <p class="contact-lead">
+        LP制作・Web制作のご相談を承っています。<br>
+        小規模事業者様向けの制作を中心に対応しております。
+      </p>
+
+      <div class="contact-flow">
+        <p>① ご相談</p>
+        <p>② ヒアリング</p>
+        <p>③ 制作</p>
+        <p>④ 納品・修正対応</p>
+      </div>
+
+      <p class="contact-note">
+        初めての方でも安心してご依頼いただけるよう、丁寧に進行いたします。
+      </p>
+
+      <button>お問い合わせする</button>
+
+      <p class="contact-meta">
+        ※24時間以内に返信いたします
+      </p>
+    </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>© 2026 saku.dev</p>
-    <p>saku.dev@gmail.com</p>
+    <p>© 2026 LP Portfolio</p>
   </footer>
 
   <script src="script.js"></script>
