@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  background-image: url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  position: relative;
+}
+
+/* 暗いフィルター */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(62, 44, 35, 0.55);
+}
+
+/* テキスト */
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+}
+
+.hero-overlay h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ボタン */
+.hero button {
+  padding: 12px 24px;
+  border: none;
+  background: white;
+  color: #3e2c23;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: translateY(-2px);
+}
+/* セクション */
+section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+/* MENU */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #f5f5f5;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 30%;
+
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+/* ACCESS */
+.info-box {
+  background: #fafafa;
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+/* CONTACT */
+.contact button {
+  padding: 12px 24px;
+  border: none;
+  background: #3e2c23;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
+
+/* アニメーション */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* スマホ */
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

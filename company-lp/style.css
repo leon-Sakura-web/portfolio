@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== ヒーロー ===== */
+.hero {
+  background: linear-gradient(135deg, #1f2937, #374151);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero button {
+  padding: 14px 28px;
+  border: none;
+  background: #f59e0b;
+  color: white;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* ===== 共通 ===== */
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* ===== Features ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.box {
+  background: #f3f4f6;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* ===== Service ===== */
+.service .card {
+  background: white;
+  margin: 15px auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+/* ===== Price ===== */
+.price-card {
+  display: inline-block;
+  padding: 30px;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-size: 20px;
+}
+
+/* ===== CTA ===== */
+.cta {
+  background: #111827;
+  color: white;
+}
+
+.cta button {
+  padding: 14px 28px;
+  border: none;
+  background: #10b981;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ===== フッター ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
+
+/* ===== アニメーション ===== */
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== スマホ ===== */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 80px 15px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+}
